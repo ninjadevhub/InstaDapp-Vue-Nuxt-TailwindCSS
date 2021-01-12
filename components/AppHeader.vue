@@ -18,7 +18,7 @@
           </ul>
           <a
             small
-            class="ml-8 px-4 h-8 transition duration-150 cursor-pointer font-semibold items-center bg-primary-blue rounded text-sm hidden lg:flex text-white hover:bg-opacity-75"
+            class="ml-8 px-4 h-8 transition duration-150 cursor-pointer font-semibold items-center bg-primary-blue rounded text-sm bg-opacity-25 hidden lg:flex text-white hover:bg-opacity-75"
             >Dashboard<svg
               class="ml-2"
               width="12"
@@ -31,12 +31,7 @@
             </svg>
           </a>
 
-          <AppBtnSecondary
-            small
-            class="bg-opacity-25 lg:hidden"
-            :class="{ 'bg-primary-blue': menuOpened }"
-            @click="toggleMenu"
-          >
+          <AppBtnSecondary small class="bg-opacity-50 bg-primary-blue lg:hidden" @click="toggleMenu">
             <div
               class="flex justify-center items-center h-6 w-6 px-1"
               :class="menuOpened ? 'text-primary-blue' : 'text-white'"
